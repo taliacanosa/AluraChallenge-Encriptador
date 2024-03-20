@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="Img/icono.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="Img/Logo.png" alt="Logo de Alura">
+    </header>
+
+
+    <main>
+        <section class="izquierda">
+            <textarea id="textArea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+
+            <div class="aclaracion">
+                <span class="aclaracionTexto">
+                    <img src="Img/bi_exclamation-circle-fill.png" alt="icono de admiración dentro de un círculo">
+                    <p>Solo en mayusculas y sin acento</p>
+                </span>
+            </div>
+
+            <div class="botones">
+                <button class="btn-Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+
+        <section class="derecha">
+            <img id="munieco" src="Img/Muñeco.jpg" alt="Dibujo de un chico con una lupa">
+
+            <h1 id="mensajeNoEncontrado">Ningún mensaje fue encontrado</h1>
+
+            <textarea id="mensaje" cols="0" rows="10"
+                placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+
+            <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        By Talia Canosa
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
